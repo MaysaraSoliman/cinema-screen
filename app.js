@@ -73,7 +73,12 @@ function calcTotal() {
     let totalPrice = seatArray.reduce((total, seat) => {
         return total + seat.seatPrice;
     }, 0);
-    priceOfSeats.innerHTML = `Price: x${seatsAmount} Ticket - ${totalPrice} EGP`;
+    if (seatsAmount > 0) {
+        priceOfSeats.innerHTML = `Price: x${seatsAmount} Ticket - ${totalPrice} EGP`;
+    } else {
+        priceOfSeats.innerHTML = `No seat selected`;
+    }
+
 }
 
 function addTheSeatToLocalstorage(list) {
