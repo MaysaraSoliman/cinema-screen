@@ -29,14 +29,26 @@
     z-index: 1;
 }
 
-
-
 /* Header End*/
 
 /* Start Booking Section */
+.booking-wrapper h1 {
+    position: relative;
+}
+
+.booking-wrapper h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 3px;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+}
+
 .booking-wrapper .booking-row {
     border-bottom: 1px solid #eee;
-
 }
 
 .booking-wrapper .icon {
