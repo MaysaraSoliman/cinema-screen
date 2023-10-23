@@ -1,0 +1,221 @@
+:root {
+    --blue-color: #2bace1;
+    --purple-color: #d3187c;
+    --light-grey-color: #e0e0e0;
+    --light-green-color: #78b587;
+}
+
+* {
+    list-style: none;
+    text-decoration: none !important;
+}
+
+/* Header Start*/
+#header {
+    position: relative;
+    min-height: 128px;
+    background: url(../images/header/header-background-2940x70@2x.png) top center no-repeat;
+    background-size: 2940px 70px;
+}
+
+#header .header-brand .brand-vox {
+    background: url(../images/header/logo-288x92.png) 0 0 no-repeat;
+    background-size: 125px 40px;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    height: 40px;
+    width: 125px;
+    z-index: 1;
+}
+
+
+
+/* Header End*/
+
+/* Start Booking Section */
+.booking-wrapper .booking-row {
+    border-bottom: 1px solid #eee;
+
+}
+
+.booking-wrapper .icon {
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
+/* End Booking Section */
+
+/* Start Cinema Section */
+
+#cinema {
+    background-color: #242333;
+}
+
+.screen-wrapper {
+    perspective: 1000px;
+}
+
+.screen {
+    width: 90%;
+    height: 150px;
+    background-color: white;
+    transform-style: preserve-3d;
+    transform: rotateX(-45deg);
+    box-shadow: 2px 10px 10px rgba(255, 255, 255, 0.75);
+}
+
+.seats-wrapper {
+    /* width: 90%; */
+    margin: 0 auto;
+}
+
+.seats-wrapper .seats-row {
+    padding-left: 0;
+}
+
+.seats-wrapper .seats-row .seat {
+    width: 25px;
+    aspect-ratio: 1/1;
+    background-color: gray;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    list-style: none;
+}
+
+.seating-key {
+    border: 1px dashed white;
+    border-left: none;
+    border-right: none;
+}
+
+.seating-key .key-col {}
+
+
+
+.seating-key .key-col .status-frame {
+    position: relative;
+    width: 25px;
+    aspect-ratio: 1/1;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.unavaliable-frame {
+    background-color: var(--light-grey-color) !important;
+}
+
+.your-seat-frame {
+    background-color: var(--purple-color) !important;
+}
+
+.standard-frame {
+    background-color: var(--blue-color) !important;
+}
+
+.premium-frame {
+    background-color: var(--light-green-color) !important;
+}
+
+.seating-key .key-col .status-frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    transform: rotate(-45deg);
+}
+
+.seating-key .key-col .status-frame::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.seating-key .key-col .status {}
+
+.selected-seats-wrapper {}
+
+.selected-seats-wrapper .confirmSeatsBtn {
+    background-color: #d3187c;
+}
+
+@media(max-width: 600px) {
+    .seats-wrapper .seats-row .seat {
+        width: 20px;
+    }
+
+    .seating-key .key-col .status-frame {
+        width: 20px;
+    }
+}
+
+@media(max-width: 500px) {
+    .seats-wrapper .seats-row .seat {
+        width: 16px;
+    }
+
+
+}
+
+@media(max-width: 400px) {
+    .seats-wrapper .seats-row .seat {
+        width: 14px;
+    }
+}
+
+@media(max-width: 360px) {
+    .seats-wrapper .seats-row .seat {
+        width: 10px;
+    }
+}
+
+
+/* End Cinema Section */
+
+/* Start order Section */
+.order-wrapper .order-row {
+    border-bottom: 1px solid #eee;
+}
+
+.order-wrapper .icon {
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
+.order-wrapper h2 {
+    color: var(--light-grey-color);
+}
+
+/* End order Section */
+
+/* Start Footer Section */
+#footer {}
+
+#footer .footer-wrapper {}
+
+#footer .footer-wrapper .brand-vox img {
+    width: 125px;
+    height: 40px;
+}
+
+#footer .footer-wrapper .icons-links a {
+    width: 40px;
+    aspect-ratio: 1/1;
+    background-color: black;
+}
+
+#footer .footer-wrapper i {}
+
+/* End Footer Section */
