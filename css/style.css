@@ -180,6 +180,10 @@ a:hover {
     background-color: #d3187c;
 }
 
+.selected-seats-wrapper .downloadSeatsBtn {
+    background-color: #d3187c;
+}
+
 @media(max-width: 600px) {
     .seats-wrapper .seats-row .seat {
         width: 20px;
